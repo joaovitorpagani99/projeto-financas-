@@ -1,14 +1,22 @@
 import React from "react";
-import DespesaFormulario from "../../Components/Formulario/Formulario/DespesaForm";
-import styles from "./despesa.module.css";
+import { useLocation } from "react-router-dom";
 
+import Mensagem from "../../Components/Alert/Mensagem";
 
-const Despesa = () => {
+function Despesa () {
+  
+  const location = useLocation();
+  
+  let mensagem = ''
+  
+  if(location.state){
+    mensagem = location.state.mensagem
+  }
+
   return (
-    <div className={styles.despesa_container}>
-      <h1> Criar uma Despesa</h1>
-      <p>crie sua despesa</p>
-      <DespesaFormulario btnText="Criar despesa"/>
+    <div >
+      <h1>Despesa</h1>
+       {mensagem && <Mensagem type="sucess" msg={mensagem} /> }
     </div>
   );
 };

@@ -6,6 +6,7 @@ import Contact from './Pages/contato/Contact.jsx';
 import Despesa from './Pages/despesa/Despesa.jsx';
 import Home from './Pages/home/Home.jsx';
 import App from './app/App.jsx';
+import NovaDespesa from './Pages/despesa/NovaDespesa.jsx';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/despesa",
         element: <Despesa />
+      },
+      {
+        path: "/novaDespesa",
+        element: <NovaDespesa />
       }
     ],
   }
