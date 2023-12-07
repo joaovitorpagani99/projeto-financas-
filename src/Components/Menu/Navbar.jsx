@@ -1,11 +1,13 @@
 import React from "react";
 import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
+import styles from "../../Components/Menu/navbar.module.css";
 
 const NavBar = () => {
   return (
-    <>
+    <div className={styles.navBar}>
       <Nav className="justify-content-center" activeKey="/home">
+        <h2 > Finanças</h2>
         <Nav.Item>
           <Link to="/" className="nav-link">
             Home
@@ -32,7 +34,7 @@ const NavBar = () => {
           </Link>
         </Nav.Item>
       </Nav>
-    </>
+    </div>
   );
 };
 

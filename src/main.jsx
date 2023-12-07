@@ -7,6 +7,7 @@ import Despesa from './Pages/despesa/Despesa.jsx';
 import Home from './Pages/home/Home.jsx';
 import App from './app/App.jsx';
 import NovaDespesa from './Pages/despesa/NovaDespesa.jsx';
+import './index.css'
 
 const router = createBrowserRouter([
   {

@@ -1,0 +1,8 @@
+.navBar h2 {
+   margin-right: 50%;
+   transition: color 0.3s ease;
+}
+
+.navBar h2:hover {
+    color: rgb(233, 182, 116);
+ }

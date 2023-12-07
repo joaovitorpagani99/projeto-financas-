@@ -1,23 +1,12 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
-
-import Mensagem from "../../Components/Alert/Mensagem";
+import Tabela from "../../Components/Table/table";
 
 function Despesa () {
-  
-  const location = useLocation();
-  
-  let mensagem = ''
-  
-  if(location.state){
-    mensagem = location.state.mensagem
-  }
 
   return (
-    <div >
-      <h1>Despesa</h1>
-       {mensagem && <Mensagem type="sucess" msg={mensagem} /> }
-    </div>
+    <>
+      <Tabela/>
+    </>
   );
 };
 
